@@ -4,6 +4,10 @@ Unofficial fork of [`@pipilu123566/dsh-balance`](https://github.com/pipilu123566
 that adds a ruble approximation at the CBR (Bank of Russia) daily rate and a bundled
 Russian UI dictionary.
 
+- Repository: <https://github.com/artuasova/dsh-balance-ru>
+- Prebuilt archive: [`dsh-balance-ru-1.2.0.tgz`](../../releases/download/v1.2.0/dsh-balance-ru-1.2.0.tgz)
+  (all versions on the [Releases](../../releases) page)
+
 ## Features
 
 - Provider balances (DeepSeek account, official DeepSeek API, OpenRouter, SiliconFlow, …).
