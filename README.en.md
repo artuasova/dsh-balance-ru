@@ -16,15 +16,15 @@ Russian UI dictionary.
 
 ![Overview: balance and today's spending with the ruble approximation](docs/images/balance-panel.png)
 
-*Overview: available balance and today's spending. The `≈ 237 ₽` / `≈ 153 ₽` lines are an
-approximate CBR-rate conversion; the original USD/CNY amounts are untouched.*
+*Overview: available balance and today's spending. The `≈ … ₽` lines are an approximate
+CBR-rate conversion; amounts and the update time are hidden on the screenshot.*
 
 ![Model prices](docs/images/prices-panel.png)
 
 *Model prices: per-model input/output/cache prices in CNY or USD.*
 
-Screenshots come from a working DeepSeek Harness 0.2.1-rc.5 installation; amounts are the
-actual balances at capture time.
+Screenshots come from a working DeepSeek Harness 0.2.1-rc.5 installation; amounts and the
+update time are masked, everything else is non-personal.
 
 ## Features
 
