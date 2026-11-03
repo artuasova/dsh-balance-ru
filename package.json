@@ -1,0 +1,83 @@
+{
+  "name": "dsh-balance-ru",
+  "version": "1.2.0",
+  "description": "Балансы провайдеров и расходы за день для DeepSeek Harness с пересчётом в рубли по курсу ЦБ РФ и русским интерфейсом плагина. Неофициальный форк @pipilu123566/dsh-balance.",
+  "type": "module",
+  "engines": {
+    "node": ">=22",
+    "dsh": "0.2.1-rc.5"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "balances.js",
+    "usage.js",
+    "pricing.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "README.en.md",
+    "NOTICE.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "balance.test.js",
+    "lifecycle.test.js",
+    "usage.test.js",
+    "pricing.test.js",
+    "client.test.js",
+    "rub.test.js"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-ui-settings-account",
+        "@deepseek-ai/dsh-client-ui-chat"
+      ]
+    }
+  },
+  "scripts": {
+    "test": "node --test balance.test.js lifecycle.test.js usage.test.js pricing.test.js client.test.js rub.test.js",
+    "pack": "npm pack"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "~4.0.5",
+    "@deepseek-ai/dsh-llm": "0.2.1-rc.5",
+    "@deepseek-ai/dsh-typert-protocol": "0.2.1-rc.5"
+  },
+  "devDependencies": {
+    "@deepseek-ai/cordis": "4.0.5",
+    "@deepseek-ai/dsh-llm": "0.2.1-rc.5",
+    "@deepseek-ai/dsh-typert-protocol": "0.2.1-rc.5"
+  },
+  "dependencies": {
+    "@deepseek-ai/schemastery": "3.18.5",
+    "zod": "4.6.7"
+  },
+  "license": "MIT",
+  "keywords": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "plugin",
+    "balance",
+    "ruble",
+    "rub",
+    "cbr",
+    "russian",
+    "usage",
+    "cost-estimation"
+  ]
+}
