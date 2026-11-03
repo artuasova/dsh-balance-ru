@@ -27,6 +27,7 @@
     "NOTICE.md",
     "CHANGELOG.md",
     "LICENSE",
+    "docs/",
     "balance.test.js",
     "lifecycle.test.js",
     "usage.test.js",
