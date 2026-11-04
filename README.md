@@ -10,7 +10,7 @@
 всех сумм в рубли по курсу ЦБ РФ и русским интерфейсом.
 
 - Репозиторий: <https://github.com/artuasova/dsh-balance-ru>
-- Готовый архив: [`dsh-balance-ru-1.2.0.tgz`](../../releases/download/v1.2.0/dsh-balance-ru-1.2.0.tgz)
+- Готовый архив: [`dsh-balance-ru-1.2.1.tgz`](../../releases/download/v1.2.1/dsh-balance-ru-1.2.1.tgz)
   (все версии — [Releases](../../releases))
 
 ## Скриншоты
@@ -25,7 +25,7 @@
 *«Цены моделей»: свои цены за миллион токенов для пары «поставщик/модель», с валютой
 CNY или USD.*
 
-Скриншоты сделаны в рабочей установке DeepSeek Harness 0.2.1-rc.5; суммы и время
+Скриншоты сделаны в рабочей установке DeepSeek Harness; суммы и время
 обновления скрыты, остальные данные не персональные.
 
 ## Возможности
@@ -47,14 +47,14 @@ CNY или USD.*
 
 ## Требования
 
-- DeepSeek Harness **0.2.1-rc.5** (Desktop); версия проверяется полем `engines.dsh`.
+- DeepSeek Harness **0.2.2-rc.1** (Desktop); версия проверяется полем `engines.dsh`.
 - Windows, macOS или Linux — плагин клиентский, работает в Web UI Harness.
 - Интернет для курса ЦБ (кэш 6 часов). Без сети суммы показываются как обычно, без ₽.
 
 ## Установка
 
 1. Полностью закройте DeepSeek Harness (не просто сверните окно).
-2. Скачайте [`dsh-balance-ru-1.2.0.tgz`](../../releases/download/v1.2.0/dsh-balance-ru-1.2.0.tgz).
+2. Скачайте [`dsh-balance-ru-1.2.1.tgz`](../../releases/download/v1.2.1/dsh-balance-ru-1.2.1.tgz).
 3. Если раньше стоял оригинальный `@pipilu123566/dsh-balance`, удалите его — в профиле
    должен остаться только один плагин баланса:
 
@@ -65,18 +65,18 @@ CNY или USD.*
 4. Установите архив:
 
    ```sh
-   dsh plugin --profile desktop add ./dsh-balance-ru-1.2.0.tgz --ignore-scripts
+   dsh plugin --profile desktop add ./dsh-balance-ru-1.2.1.tgz --ignore-scripts
    ```
 
    Если `dsh` не в `PATH` (macOS):
 
    ```sh
    '/Applications/DeepSeek Harness.app/Contents/Resources/runtime/cli/bin/dsh' \
-     plugin --profile desktop add ./dsh-balance-ru-1.2.0.tgz --ignore-scripts
+     plugin --profile desktop add ./dsh-balance-ru-1.2.1.tgz --ignore-scripts
    ```
 
    Windows: `"%LOCALAPPDATA%\Programs\DeepSeek Harness\resources\runtime\cli\bin\dsh.cmd"`
-   `plugin --profile desktop add .\dsh-balance-ru-1.2.0.tgz --ignore-scripts`.
+   `plugin --profile desktop add .\dsh-balance-ru-1.2.1.tgz --ignore-scripts`.
 
 5. Откройте Harness: внизу боковой панели появится кнопка **«Баланс»**. Наведите курсор
    или нажмите, чтобы закрепить панель; `Esc` закрывает.
@@ -105,7 +105,7 @@ dsh plugin --profile desktop add "/полный/путь/к/dsh-balance-ru" --ig
 
 ## Отличия от `@pipilu123566/dsh-balance@1.1.0`
 
-| | Апстрим 1.1.0 | Этот форк 1.2.0 |
+| | Апстрим 1.1.0 | Этот форк 1.2.1 |
 |---|---|---|
 | Рубли по курсу ЦБ | — | ✅ панель, расходы, модели, сессии, ход |
 | Русский словарь | — | ✅ 86 строк, встроен |
@@ -124,7 +124,7 @@ dsh plugin --profile desktop add "/полный/путь/к/dsh-balance-ru" --ig
 ```sh
 npm install
 npm test        # 30 тестов: балансы, usage, цены, клиент, RUB
-npm pack        # dsh-balance-ru-1.2.0.tgz
+npm pack        # dsh-balance-ru-1.2.1.tgz
 ```
 
 CI (`.github/workflows/ci.yml`) запускает `npm test` на Node 22 при каждом push.

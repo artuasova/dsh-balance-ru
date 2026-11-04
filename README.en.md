@@ -9,7 +9,7 @@ that adds a ruble approximation at the CBR (Bank of Russia) daily rate and a bun
 Russian UI dictionary.
 
 - Repository: <https://github.com/artuasova/dsh-balance-ru>
-- Prebuilt archive: [`dsh-balance-ru-1.2.0.tgz`](../../releases/download/v1.2.0/dsh-balance-ru-1.2.0.tgz)
+- Prebuilt archive: [`dsh-balance-ru-1.2.1.tgz`](../../releases/download/v1.2.1/dsh-balance-ru-1.2.1.tgz)
   (all versions on the [Releases](../../releases) page)
 
 ## Screenshots
@@ -23,7 +23,7 @@ CBR-rate conversion; amounts and the update time are hidden on the screenshot.*
 
 *Model prices: per-model input/output/cache prices in CNY or USD.*
 
-Screenshots come from a working DeepSeek Harness 0.2.1-rc.5 installation; amounts and the
+Screenshots come from a working DeepSeek Harness installation; amounts and the
 update time are masked, everything else is non-personal.
 
 ## Features
@@ -38,17 +38,17 @@ update time are masked, everything else is non-personal.
 
 ## Requirements
 
-- DeepSeek Harness **0.2.1-rc.5** (Desktop), enforced by `engines.dsh`.
+- DeepSeek Harness **0.2.2-rc.1** (Desktop), enforced by `engines.dsh`.
 - Internet access for the exchange rate (cached 6 hours; otherwise no ruble line).
 
 ## Install
 
 1. Fully quit DeepSeek Harness.
-2. Download [`dsh-balance-ru-1.2.0.tgz`](../../releases/download/v1.2.0/dsh-balance-ru-1.2.0.tgz).
+2. Download [`dsh-balance-ru-1.2.1.tgz`](../../releases/download/v1.2.1/dsh-balance-ru-1.2.1.tgz).
 3. Remove the original plugin unless only one balance plugin is installed:
    `dsh plugin --profile desktop remove @pipilu123566/dsh-balance`
 4. Add the tarball:
-   `dsh plugin --profile desktop add ./dsh-balance-ru-1.2.0.tgz --ignore-scripts`
+   `dsh plugin --profile desktop add ./dsh-balance-ru-1.2.1.tgz --ignore-scripts`
 5. Start Harness and use the **Balance** button at the bottom of the sidebar.
 
 Switch the plugin UI to Russian with **Settings → General → Language → Russian** (the plugin
@@ -75,7 +75,7 @@ are kept from upstream.
 ```sh
 npm install
 npm test   # 30 tests
-npm pack   # dsh-balance-ru-1.2.0.tgz
+npm pack   # dsh-balance-ru-1.2.1.tgz
 ```
 
 ## License
